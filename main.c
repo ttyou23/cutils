@@ -6,16 +6,22 @@
 void test_base256()
 {
     int i, str_len;
-    unsigned char *str = "发2k";
-    wchar_t wstr[]= L"中文";
+    unsigned char *str = "中文1a";
+    wchar_t wstr[]= L"中文1a";
     str_len = wcslen(wstr);
     printf("%d \n", str_len);
-    printf("%s \n", wstr);
     for(i=0; i<str_len; i++)
     {
-        printf("%d ", wstr[i]);
+        printf("%x ", wstr[i]);
     }
+    printf("\n");
 
+    str_len = strlen(str);
+    printf("%d \n", str_len);
+    for(i=0; i<str_len; i++)
+    {
+        printf("%x ", str[i]);
+    }
 }
 
 int main()
