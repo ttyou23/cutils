@@ -10,6 +10,7 @@ void test_base256()
     wchar_t wstr[]= L"жпнд1a";
     str_len = wcslen(wstr);
     printf("%d \n", str_len);
+    printf("%ls \n", wstr);
     for(i=0; i<str_len; i++)
     {
         printf("%x ", wstr[i]);
@@ -18,6 +19,7 @@ void test_base256()
 
     str_len = strlen(str);
     printf("%d \n", str_len);
+    printf("%s \n", str);
     for(i=0; i<str_len; i++)
     {
         printf("%x ", str[i]);
