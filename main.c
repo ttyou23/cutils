@@ -6,8 +6,8 @@
 void test_base256()
 {
     int i, str_len;
-    unsigned char *str = "中文1a";
-    wchar_t wstr[]= L"中文1a";
+    unsigned char *str = "浣燼";
+    wchar_t wstr[]= L"浣燼";
     str_len = wcslen(wstr);
     printf("%d \n", str_len);
     printf("%ls \n", wstr);
